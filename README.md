@@ -1,6 +1,10 @@
 # giffgaff AWS Networking Module
 
+This repsitory contains a tool to extract the IDs of network infrastrcuture from giffgaff AWS accounts into a terraform s3 backend, so that they can be referenced by other terraform modules.
+
+
 THe AWS Accounts at giffgaff are set up by the DES team in a standard format:
+
 
 One VPC, connected via site to site VPN.
 6 Subnets, in two availbility zones:
@@ -12,9 +16,9 @@ One VPC, connected via site to site VPN.
 | private\_2\_subnet\_a  | private\_1\_subnet\_b |
 
 
-This repsitory contains a tool to extract the IDs of these AWS entities, into a terraform s3 backend, so that they can be referenced by other terraform modules.
 
-### Prerequisites
+
+## Prerequisites
 
 #### GNU Sed
 On a mac, you'll need proper `sed`:
@@ -27,7 +31,7 @@ This ruby gem allows you to construct terraform files and state from existing AW
 
     sudo gem install terraforming
 
-### Usage
+## Usage
 
 1. Authenticate with okta, using a PowerUser role in your chosen account
 1. Run `./auto_import.sh`
