@@ -56,7 +56,7 @@ cat <<EOF > terraform.tf
 terraform {
   backend "s3" {
     bucket = "$statebucket"
-    key    = "network"
+    key    = "network/terraform.tfstate"
     region = "eu-west-1"
   }
 }

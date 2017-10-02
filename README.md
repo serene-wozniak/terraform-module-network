@@ -53,7 +53,7 @@ Then run  terraform init
 ```
 
 
-### Using state from this tool
+### Using state from this tool in a different terraform module
 
 First - set the bucket up as a remote state data source:
 ```
