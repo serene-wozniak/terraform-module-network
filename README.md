@@ -3,7 +3,8 @@
 This repsitory contains a tool to extract the IDs of network infrastrcuture from giffgaff AWS accounts into a terraform s3 backend, so that they can be referenced by other terraform modules.
 
 
-THe AWS Accounts at giffgaff are set up by the DES team in a standard format:
+## Network Layout
+The AWS Accounts at giffgaff are set up by the DES team in a standard format:
 
 
 One VPC, connected via site to site VPN.
