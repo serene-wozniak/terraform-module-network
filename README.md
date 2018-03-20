@@ -1,4 +1,4 @@
-# giffgaff AWS Networking Module
+# AWS Networking Module
 
 This repsitory contains a tool to extract the IDs of network infrastrcuture from giffgaff AWS accounts into a terraform s3 backend, so that they can be referenced by other terraform modules.
 
